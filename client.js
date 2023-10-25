@@ -13,6 +13,10 @@ const connect = function() {
 
   conn.on("connect", () => {
     conn.write("Name: SLD");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 30);
+
   });
 
   // interpret incoming data as text
@@ -28,4 +32,4 @@ const connect = function() {
 
 console.log("Connecting ...");
 
-module.exports = {connect};
+module.exports = { connect };
